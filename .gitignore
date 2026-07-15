@@ -1,0 +1,20 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ChromaDB - explicitly included in repo, exclude nothing here
+# chroma_db/ DO NOT uncomment this line
+
+# OS
+.DS_Store
+Thumbs.db
