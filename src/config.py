@@ -1,7 +1,10 @@
 import os
+print("API KEY:", os.environ.get("GOOGLE_API_KEY"))
 import chromadb
 import google.genai as genai
+from dotenv import load_dotenv
 
+load_dotenv()
 
 # API key
 GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
