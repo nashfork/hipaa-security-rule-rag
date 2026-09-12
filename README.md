@@ -62,6 +62,14 @@ Questions outside the scope of the two source documents will be declined.
 
 ---
 
+## Ontology-Grounded Retrieval (Prototype)
+
+A separate, validated prototype explores ontology-based query expansion to address synonymy blindness — e.g., a query using "malware" correctly retrieves chunks using the formal regulatory term "malicious software," even when they aren't close enough in embedding space for cosine similarity alone to reliably surface them.
+
+**This is not integrated into the live app above.** It was developed and tested against a local copy of the ChromaDB collection, kept deliberately separate from the deployed instance. See [`ontology-prototype/ONTOLOGY.md`](./ontology-prototype/ONTOLOGY.md) for the full methodology, design decisions, and evidence.
+
+---
+
 ## Getting Started
 
 **Prerequisites:**

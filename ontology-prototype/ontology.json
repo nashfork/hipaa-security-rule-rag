@@ -1,0 +1,185 @@
+{
+  "C001": {
+    "candidate_label": "electronic protected health information",
+    "definition": "IIHI that is transmitted by or maintained in electronic media",
+    "source_terms": ["ePHI", "electronic protected health information"],
+    "tagging_terms": [],
+    "status": "current",
+    "confidence": "high",
+    "tagging_flag": "excluded from chunk tagging — matched 47.1% of corpus in frequency analysis, insufficient discriminating power for retrieval boosting"
+  },
+  "C002": {
+    "candidate_label": "regulated entity",
+    "definition": "collective term for covered entities and business associates",
+    "source_terms": ["regulated entities", "covered entities and business associates"],
+    "tagging_terms": [],
+    "status": "current",
+    "confidence": "high",
+    "tagging_flag": "excluded from chunk tagging — matched 42.9% of corpus in frequency analysis, insufficient discriminating power for retrieval boosting"
+  },
+  "C003": {
+    "candidate_label": "security incident",
+    "definition": "the attempted or successful unauthorized access, use, disclosure, modification, or destruction of information or interference with system operations in an information system",
+    "source_terms": ["security incident", "security incidents"],
+    "status": "current",
+    "confidence": "high",
+    "note": "'cyberattack' is informal preamble language, not a defined synonym — likely narrower than / subset of this concept, not equivalent."
+  },
+  "C004": {
+    "candidate_label": "breach",
+    "definition": "the acquisition, access, use, or disclosure of PHI in a manner not permitted under the Privacy Rule that compromises the security or privacy of the PHI",
+    "source_terms": ["breach", "breaches of unsecured PHI"],
+    "status": "current",
+    "confidence": "medium",
+    "relates_to": "C003",
+    "relation_type": "cross_subpart_related",
+    "note": "Defined in the Breach Notification Rule (45 CFR 164.402), not in this subpart's §164.304 — cross-document relationship, not a synonym."
+  },
+  "C005a": {
+    "candidate_label": "administrative safeguards",
+    "definition": "administrative actions, and policies and procedures, to manage the selection, development, implementation, and maintenance of security measures to protect ePHI and to manage workforce conduct",
+    "source_terms": ["administrative safeguards", "administrative safeguard"],
+    "status": "current",
+    "confidence": "high",
+    "relates_to": "C009",
+    "relation_type": "part_of"
+  },
+  "C005b": {
+    "candidate_label": "physical safeguards",
+    "definition": "physical measures, policies, and procedures to protect a covered entity's or business associate's electronic information systems and related buildings and equipment, from natural and environmental hazards, and unauthorized intrusion",
+    "source_terms": ["physical safeguards", "physical safeguard"],
+    "status": "current",
+    "confidence": "high",
+    "relates_to": "C009",
+    "relation_type": "part_of"
+  },
+  "C005c": {
+    "candidate_label": "technical safeguards",
+    "definition": "the technology and the policy and procedures for its use that protect ePHI and control access to it",
+    "source_terms": ["technical safeguards", "technical safeguard"],
+    "status": "current",
+    "confidence": "high",
+    "relates_to": "C009",
+    "relation_type": "part_of"
+  },
+  "C007": {
+    "candidate_label": "business associate",
+    "definition": "a person or entity that performs certain functions or activities involving the use or disclosure of PHI on behalf of, or provides specified services to, a covered entity",
+    "source_terms": ["business associate", "business associate agreement"],
+    "tagging_terms": [],
+    "status": "current",
+    "confidence": "high",
+    "relates_to": "C002",
+    "relation_type": "instance_of",
+    "tagging_flag": "excluded from chunk tagging — matched 34.6% of corpus in frequency analysis, insufficient discriminating power for retrieval boosting"
+  },
+  "C008a": {
+    "candidate_label": "information system",
+    "definition": "an interconnected set of information resources under the same direct management control that shares common functionality",
+    "source_terms": ["information system"],
+    "status": "current",
+    "confidence": "high"
+  },
+  "C008b": {
+    "candidate_label": "technology asset",
+    "definition": "a component of an electronic information system, generally including hardware, software, electronic media, information, and data",
+    "source_terms": ["technology asset"],
+    "status": "proposed",
+    "confidence": "low",
+    "relates_to": "C008a",
+    "relation_type": "narrows",
+    "note": "Proposed new definition, not yet in current §164.304 — narrows/formalizes what's currently only implicit within 'information system.'"
+  },
+  "C009": {
+    "candidate_label": "security / security measures",
+    "definition": "encompass all of the administrative, physical, and technical safeguards in an information system",
+    "source_terms": ["security measures", "security measure", "security"],
+    "tagging_terms": ["security measures", "security measure"],
+    "status": "current",
+    "confidence": "high",
+    "tagging_flag": "bare 'security' excluded from chunk tagging — too broad/noisy; matched 19.6% with 'security measure(s)' variants only, but bare form would push this well above the 35%+ exclusion threshold"
+  },
+  "C010": {
+    "candidate_label": "access",
+    "definition": "the ability or the means necessary to read, write, modify, or communicate data/information or otherwise use any system resource",
+    "source_terms": ["access", "accessed", "accessing"],
+    "tagging_terms": [],
+    "status": "current",
+    "confidence": "high",
+    "tagging_flag": "excluded from chunk tagging — matched 54.2% of corpus in frequency analysis (highest of any concept), insufficient discriminating power for retrieval boosting"
+  },
+  "C011": {
+    "candidate_label": "authentication",
+    "definition": "the corroboration that a person is the one claimed",
+    "source_terms": ["authentication", "authenticate", "authenticated", "authenticating"],
+    "status": "current",
+    "confidence": "high"
+  },
+  "C012": {
+    "candidate_label": "confidentiality",
+    "definition": "the property that data or information is not made available or disclosed to unauthorized persons or processes",
+    "source_terms": ["confidentiality", "confidential"],
+    "tagging_terms": [],
+    "status": "current",
+    "confidence": "high",
+    "tagging_flag": "excluded from chunk tagging — matched 38.8% of corpus in frequency analysis, insufficient discriminating power for retrieval boosting"
+  },
+  "C013": {
+    "candidate_label": "integrity",
+    "definition": "the property that data or information have not been altered or destroyed in an unauthorized manner",
+    "source_terms": ["integrity"],
+    "tagging_terms": [],
+    "status": "current",
+    "confidence": "high",
+    "tagging_flag": "excluded from chunk tagging — matched 38.3% of corpus in frequency analysis, insufficient discriminating power for retrieval boosting"
+  },
+  "C014": {
+    "candidate_label": "encryption",
+    "definition": "the use of an algorithmic process to transform data into a form in which there is a low probability of assigning meaning without use of a confidential process or key",
+    "source_terms": ["encryption", "encrypt", "encrypted", "encrypting"],
+    "status": "current",
+    "confidence": "high"
+  },
+  "C015": {
+    "candidate_label": "malicious software",
+    "definition": "software designed to damage or disrupt a system",
+    "source_terms": ["malicious software", "malware"],
+    "status": "current",
+    "confidence": "high",
+    "note": "'malware' added as true synonym — the clearest real synonymy-blindness case found during the tagging audit."
+  },
+  "C016": {
+    "candidate_label": "password",
+    "definition": "confidential authentication information composed of a string of characters",
+    "source_terms": ["password", "passwords"],
+    "status": "current",
+    "confidence": "high",
+    "relates_to": "C011",
+    "relation_type": "instance_of"
+  },
+  "C017": {
+    "candidate_label": "user",
+    "definition": "a person or entity with authorized access",
+    "source_terms": ["user", "users"],
+    "tagging_terms": [],
+    "status": "current",
+    "confidence": "high",
+    "tagging_flag": "excluded from chunk tagging entirely — too short/common to be a useful signal; kept as reference-only concept",
+    "relates_to": "C010",
+    "relation_type": "instance_of"
+  },
+  "C018": {
+    "candidate_label": "workstation",
+    "definition": "an electronic computing device (e.g., laptop or desktop computer) or similar device, and electronic media stored in its immediate environment",
+    "source_terms": ["workstation", "workstations"],
+    "status": "current",
+    "confidence": "high"
+  },
+  "C019": {
+    "candidate_label": "facility",
+    "definition": "the physical premises and the interior and exterior of a building(s)",
+    "source_terms": ["facility", "facilities"],
+    "status": "current",
+    "confidence": "high"
+  }
+}
